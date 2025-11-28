@@ -1,0 +1,16 @@
+//Desenvolva um algoritmo que leia 3 valores inteiros A, B e C 
+//e imprima na tela se a soma de A + B é maior, menor ou igual a C.
+
+import readline from 'readline-sync';
+
+let numero1 = readline.questionInt("Digite 3 (tres) numeros inteiros: \nPrimeiro numero: ");
+let numero2 = readline.questionInt("Segundo numero: ");
+let numero3 = readline.questionInt("Terceiro numero: ");
+
+if ((numero1 + numero2) > numero3) {
+    console.log(`A soma de ${numero1} + ${numero2} é maior que ${numero3}`);
+} else if ((numero1 + numero2) < numero3) {
+    console.log(`A soma de ${numero1} + ${numero2} é menor que ${numero3}`);
+}else{
+    console.log(`A soma de ${numero1} + ${numero2} é igual a ${numero3}`);
+}
